@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Lora&display=swap');
+@import url('https://www.flaticon.com/de/uicons');
+body{
+    background: #f7f7f7;
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    margin: 0px;
+}
+h1{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 40px;
+    color: #f96932;
+}
+h2{
+    font-size: 20px;
+    color: #dc565d;
+}
+.square{
+    height: 15px;
+    width: 100px;
+    border: 1px solid #dc565d;
+}
+footer{
+    background-color: #cccccc;
+    text-align: center;
+    padding: 5px;
+}
+.subtext{
+    color: #777777;
+}
+.main{
+    padding: 15px;
+}
+i{
+    margin: 5px;
+}
+header{
+    padding: 5px;
+    background-color: #ccd7db;
+    color: #f96932;
+}
+.Logo{
+    margin: 10px;
+    font-size: 45px;
+    color: #dc565d;
+}
