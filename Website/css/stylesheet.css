@@ -43,4 +43,11 @@ header{
     margin: 10px;
     font-size: 45px;
     color: #dc565d;
+    display: inline-block;
+}
+
+.navBtn{
+    height: 40px;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0);
 }
