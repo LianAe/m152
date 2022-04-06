@@ -2,31 +2,29 @@
 <html lang="en" style="margin: 0px;">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/stylesheet.css">
-    <script src="https://kit.fontawesome.com/fea3fbce6d.js" crossorigin="anonymous"></script>
     <title>M152</title>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script> 
+    $(function(){
+      $("#header").load("header.html"); 
+      $("#footer").load("footer.html"); 
+    });
+    </script> 
 </head>
 
 <body>
-    <header>
-        <nav>
-            <h1 class="Logo">Logo</h1>
-            <a href="styleguide.html"><button class="navBtn">styleguide</button></a>
-        </nav>
-    </header>
+    <div id="header"></div>
 
     <section class="main">
         Lian Aeschlimann
         <img src="img/WebisteWireframe.drawio.png" />
     </section>
 
-    <footer>
-        <h4>MADE BY LIAN AESCHLIMANN</h4>
-        <P class="subtext">source code: <a href="https://github.com/LianAe/m152">GitHub</a></P>
-    </footer>
-
+    <div id="footer"></div>
 </body>
 
 </html>
