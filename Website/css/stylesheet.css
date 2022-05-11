@@ -71,3 +71,15 @@ div.image {
 div.gallery{
     display: table;
 }
+
+div.vid {
+    margin: 5px;
+    border: 2px solid #dc565d;
+    float: left;
+    width: 500px;
+  }
+  
+  div.vid video {
+    width: 100%;
+    height: auto;
+  }

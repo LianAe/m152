@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" style="margin: 0px;">
+
+<head>
+    <title>Videos</title>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script> 
+    $(function(){
+      $("#header").load("header.html"); 
+      $("#footer").load("footer.html"); 
+    });
+    </script> 
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <h1>Videos</h1>
+    
+    <h2>High detail</h2>
+    <div class="gallery">
+        <div class="vid">
+            <video controls>
+                <source src="img/Videos/RE6-6 Drive-By.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="description">MP4, 1'427KB, Klein da MP4 ein wenig kompromiert</div>
+        </div>
+        <div class="vid">
+            <video controls>
+                <source src="img/Videos/RE6-6 Drive-By.webm" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+            <div class="description">Webm, 1'451KB, klein da webm kompromiert obwhol nicht viel mehr komprimiert werden kann</div>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+
+</body>
+
+</html>
