@@ -35,7 +35,7 @@
         </div>
     <h2>SVG Animations</h2>
     <div>
-    <svg width="100%" height="300">
+    <svg width="100%" height="250">
         <defs>
             <symbol id="mouth" x="20" y="50" height="50" width="100" viewBox="20 50 40 80">
                 <ellipse rx="80" ry="40" cx="40" cy="90"/>
@@ -59,17 +59,17 @@
                 <use href="#mouth" x="40" y="100"></use>
             </g>
         </defs>
-        <use href="#shark" x="50" y="50">
+        <use href="#shark" x="50" y="0">
             <animate 
             attributeName="y"
             from="400"
-            to="0" 
+            to="-50" 
             dur="4s"
             begin="0s"
             fill="freeze"/>
         </use>
-        <use href="#human" x="75" y="0"></use>
-        <rect width="10000" height="300" fill="rgba(0,0,255,0.5)" y="120"></rect>
+        <use href="#human" x="75" y="-50"></use>
+        <rect width="10000" height="300" fill="rgba(0,0,255,0.5)" y="70"></rect>
     </svg>
     </div>
 
