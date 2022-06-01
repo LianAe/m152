@@ -83,3 +83,21 @@ div.vid {
     width: 100%;
     height: auto;
   }
+  
+div.aud {
+    margin: 5px;
+    border: 2px solid #dc565d;
+    float: left;
+    width: 300px;
+  }
+  
+  div.aud audio {
+    width: 100%;
+    height: auto;
+  }
+
+  h3 {
+    color: #6a5590;
+    font-size: 20px;
+    margin: 4px
+}
