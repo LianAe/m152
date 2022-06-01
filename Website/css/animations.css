@@ -1,6 +1,6 @@
 
 @keyframes bouncing {
-    0%   {background-color:#f96932; left:10%;}
+    0%   {background-color:#f96932; left:10%; }
     25%  { left:25%; }
     50%  {background-color:#dc565d ; left:50%; }
     75%  { left:75%; }

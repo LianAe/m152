@@ -20,18 +20,46 @@
     <div id="header"></div>
     <h1>Animations</h1>
     <h2>CSS Animation</h2>
-    <script >
-        function newBtn() {
-            console.log("testz");
-            document.getElementById("cssAnimation")
-            .innerHTML += '<div><button class="swinging" onclick="newBtn()">CLICK ME!</button></div>';
-        }
-    </script>
+        <script >
+            function newBtn() {
+                console.log("testz");
+                document.getElementById("cssAnimation")
+                .innerHTML += '<div><button class="swinging" onclick="newBtn()">CLICK ME!</button></div>';
+            }
+        </script>
 
-    <div id="cssAnimation">
-        <div>
-        <button class="swinging" onclick="newBtn()">CLICK ME!</button>
+        <div id="cssAnimation">
+            <div>
+            <button class="swinging" onclick="newBtn()">CLICK ME!</button>
+            </div>
         </div>
+    <h2>SVG Animations</h2>
+    <div>
+    <svg width="100%" height="600">
+        <g cx="50%">
+            <ellipse rx="60" ry="100" cy="00" fill="darkblue"/>
+            
+        </g>
+        <symbol id="mouth" x="20" y="50" height="40" width="80" viewBox="20 50 40 80">
+            <ellipse rx="80" ry="40" cx="40" cy="90"/>
+            <polygon id="tooth" points="0,52 10,70 20,52" transform="rotate(-11 20 52)" style="fill:white;stroke:black;stroke-width:1" />
+            <use href="#tooth" x="20" y="-2" transform="rotate(6 40 50)"></use>
+            <use href="#tooth" x="40" y="0" transform="rotate(16 60 52)"></use>
+            <use href="#tooth" x="60" y="4" transform="rotate(21 80 56)"></use>
+            <use href="#tooth" x="-20" y="74" transform="rotate(-158 0 125)"></use>
+            <use href="#tooth" x="0" y="76" transform="rotate(-164 20 128)"></use>
+            <use href="#tooth" x="20" y="75" transform="rotate(-172 40 128)"></use>
+            <use href="#tooth" x="40" y="76" transform="rotate(-180 60 128)"></use>
+        </symbol>
+        <use href="#mouth" x="50" y="50"></use>
+        <animate 
+            attributeName="cy"
+            from="400"
+            to="100" 
+            dur="4s"
+            begin="click"
+            fill="freeze"/>
+    </svg>
     </div>
 
     <div id="footer"></div>
