@@ -1,0 +1,22 @@
+
+@keyframes bouncing {
+    0%   {background-color:#f96932; left:10%;}
+    25%  { left:25%; }
+    50%  {background-color:#dc565d ; left:50%; }
+    75%  { left:75%; }
+    100% {background-color:#f96932; left:90%; }
+}
+
+/* The element to apply the animation to */
+.swinging {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: #f96932;
+    animation-name: bouncing;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    font-size: 30px;
+}
