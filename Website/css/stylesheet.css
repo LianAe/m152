@@ -102,3 +102,24 @@ div.aud {
     font-size: 20px;
     margin: 4px
 }
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+}
+.testprotokol {
+  padding: 5px;
+  margin: 10px;
+  border: 2px #9371b5 solid;
+  background: white;
+}
+.testprotokol table{
+  margin: 10px;
+}
+.testPassed{
+  color: green;
+}
+.testFailed{
+  color: red;
+}
