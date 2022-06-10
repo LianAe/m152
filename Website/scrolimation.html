@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" style="margin: 0px;">
+
+<head>
+    <title>Copyrights and licences</title>
+    <link rel="stylesheet" href="css/scrolimation.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+    <style>
+    </style>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <section class="scrolltitle">
+        <h1>Scroll animations &#8595;</h1>
+    </section>
+    <section class="scrollcontent">
+        <div class="container reveal">
+            <div class="text-container">
+                <div class="text-box">
+                    <h2>Nutzen von Scroll Animationen</h2>
+                    <p>
+                        Wenn man bei seiner Webseite Scrollanimationen einbaut wirkt sie viel interesanter.
+                        Nutzer bleiben dadurch länger und interagiern mehr mit der Webseite.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="scrollcontent">
+        <div class="container">
+            <div class="text-container">
+                <div class="text-box revealleft">
+                    <h2>Einsatzgebiete</h2>
+                    <p>
+                        Scrollanimationen sollten gebraucht werden wenn man ein par kleinere Texte hat.
+                        Bei grossen Texten oder bei Texten welche Wissenschaftilch sind sollte man sie nicht brauchen da
+                        sie sehr ablenkend sein können.
+                    </p>
+                </div>
+                <div class="text-box revealright">
+                    <h2>Varianten</h2>
+                    <p>
+                        Es gibt Scrollanimationen wie diese, welche nur die Website ein wenig interesanter machen.
+                        Man kann sie aber auch für viel mehr brauchen.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+
+
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal, .revealright, .revealleft");
+            console.log(reveals);
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
+
+
+    </script>
+
+    <div id="footer"></div>
+</body>
+
+</html>
